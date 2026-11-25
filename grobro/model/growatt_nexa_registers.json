@@ -2282,7 +2282,7 @@
         }
       },
       "homeassistant": {
-        "name": "Power (Grid)",
+        "name": "AC power (grid port)",
         "publish": true,
         "state_class": "measurement",
         "device_class": "power",
