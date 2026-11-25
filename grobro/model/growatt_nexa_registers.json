@@ -2183,15 +2183,17 @@
           "data_type": "FLOAT",
           "float_options": {
             "delta": 0.0,
-            "multiplier": 1.0
+            "multiplier": 0.1
           }
         }
       },
       "homeassistant": {
-        "name": "Register No 112",
+        "name": "Battery voltage",
         "publish": true,
         "state_class": "measurement",
-        "icon": "mdi:thermometer"
+        "icon": "mdi:battery",
+        "device_class": "voltage",
+        "unit_of_measurement": "V"
       }
     },
     "battery1Temp": {
@@ -2274,8 +2276,8 @@
         "data": {
           "data_type": "FLOAT",
           "float_options": {
-            "delta": 0.0,
-            "multiplier": 1.0
+            "delta": -3000.0,
+            "multiplier": 0.1
           }
         }
       },
@@ -2298,16 +2300,18 @@
         "data": {
           "data_type": "FLOAT",
           "float_options": {
-            "delta": -30000.0,
-            "multiplier": 1.0
+            "delta": -300.0,
+            "multiplier": 0.01
           }
         }
       },
       "homeassistant": {
-        "name": "Register No 117",
+        "name": "Grid current",
         "publish": true,
         "state_class": "measurement",
-        "icon": "mdi:thermometer"
+        "icon": "mdi:current-ac",
+        "device_class": "current",
+        "unit_of_measurement": "A"
       }
     },
     "fw_version_part_1": {
